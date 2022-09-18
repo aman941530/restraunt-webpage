@@ -1,0 +1,140 @@
+
+.logo{
+ background:gray;
+ font-size: 50px;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ color:brown;
+ height: 100px;
+ width: 100px;
+ float: left;
+}
+
+body{
+ background: rgb(14, 11, 11);
+ color: aliceblue;
+ 
+}
+
+/* front banners with transitiony */
+.head{
+ color: brown;
+ margin: 0%;
+}
+span{
+ font-size: 20px;
+}
+.order{
+ position: fixed;
+ top: 0%;right: 0%;
+ margin:20px;
+ outline:5px solid red;
+ outline-offset: 5px;
+ scale: all 5s;
+
+}
+.order:hover{
+ transform:scale(105%);
+}
+.call{
+ color:red
+}
+
+
+/* background img */
+.bg{
+ background: url(/images/background.jpg) center/cover no-repeat fixed;height: 600px; 
+ display: flex;justify-content: right;align-items:center;
+ color:red;font-size: 40px;
+ /* label animation in bg */
+}
+.label
+{
+ background:rgba(16, 16, 48, 0.151) ;transition: all 2s; animation-name: move;
+ animation-duration: 10s;
+ animation-iteration-count: infinite;
+ outline: 10px solid black;
+ outline-offset: 10px;
+ margin: 20px;
+
+
+}
+@keyframes move{
+ 0%
+{transform: translateY(-60px);}
+25%{
+ transform: translatex(-60px); background: rgb(201, 89, 89);
+}
+}
+
+
+
+.block{display: inline-block;
+ margin:1px;
+ height:200px; width:24.5%;
+ background:linear-gradient(150deg,grey,rgb(199, 183, 183),rgb(172, 168, 168));
+ text-align:center;
+ justify-content: center;
+box-sizing: border-box;
+transition: all 2s linear;
+text-decoration: none;
+
+}
+
+a:hover{
+ transform: translateY(20%);
+ background:linear-gradient(150deg,rgb(197, 74, 166), rgb(184, 152, 169),rgb(194, 132, 194));
+}
+
+/* featured food transition */
+
+.fimg{
+ 
+ width: 60vh;margin: 50px;
+ position: relative;
+}
+
+.fimg>img{
+ display: block;
+}
+
+.fimg::before{
+ content:"";border:2px solid grey;
+ width:100%;height: 100%;position:absolute;box-sizing: border-box;
+ top:-40px;left:-40px;z-index: -2;
+ transition: all 2s;
+}
+.fimg::after{
+ content:"";background: grey;
+ width:100%;height: 100%;position:absolute;box-sizing: border-box;
+ top:-20px;left:-20px;z-index: -1;transition: all 2s;
+}
+.fimg:hover::before,.fimg:hover::after{top: 0;left: 0}
+
+
+/* menu section */
+#menu h4 {
+	line-height: 1.5;
+}
+#menu .col-md-8 {
+  padding-bottom: 42px;
+}
+#menu .col-md-6 {
+  padding-bottom: 18px;
+}
+#menu span {
+  color: #5C5C5C;
+}
+
+/* contact */
+.banner{height: 100px; width:200px;
+ background:linear-gradient(150deg,red,rgb(185, 27, 27),rgb(204, 143, 143));
+transition: all 1s linear;
+display: flex;justify-content: center;align-items: center;
+}
+.banner:hover{
+ transform: translateX(100px);
+}
+
+
